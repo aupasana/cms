@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Sanskrit2003";
+    src: url("Sanskrit2003.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Extra small form control, consistent with Bootstrap */
+.form-control-xs {
+  padding: .125rem .25rem;   /* tighter padding */
+  font-size: .75rem;         /* smaller font size */
+  line-height: 1.5;          /* keep same ratio */
+  border-radius: .2rem;      /* slightly reduced rounding */
+  width: 5rem;
+}
+
+.skt {
+    font-family: "Sanskrit2003", sans-serif;
+    font-size: 16pt;
+}
+
+.title-skt {
+    font-family: "Sanskrit2003", sans-serif;
+    font-size: 22pt;
+}
+
+.eng {
+    font-size: 16pt;
+}
+
+
+/* Side-by-side sections */
+.output-half {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    margin-right: 1%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.output-full {
+    display: inline-block;
+    vertical-align: top;
+    width: 98%;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    margin-right: 1%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+/* Padding */
+#ruleExplanation,
+#mulam,
+#mulamReplace,
+#rulesDropdown {
+    margin-top: 1rem;
+}
+
+/* Stay the same size when navating betweens rules via the left/right buttons */
+#ruleExplanation {
+    min-height: 3rem;
+}
+
+/* No space between lines */
+#mulam p,
+#mulamReplace p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* No footer below this */
+#output {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+
+.inputs { 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.optional {
+    opacity: 40%;
+    /* font-size: 0.75rem; */
+}
+
+.verse-number {
+    color:gray;
+    font-size: 0.75rem;
+    vertical-align: 0.2rem;
+}
+
+#rulesDropdown {
+    margin-bottom: 1rem;
+}
+
+.rule-inline {
+    font-size: 1rem;
+    padding-left: 2rem;
+}

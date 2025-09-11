@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="gita.css">
+        <link rel="icon" href="om.svg" type="image/svg+xml">
+    </head>
+    <body>
+      <div class="container mt-5">
+
+        <!-- Title -->
+        <h1 class="title-skt">श्रीमद्भगवद्गीता</h1>
+
+        <div class="alert alert-light text-muted" role="alert">
+            <p class="mb-0">
+                Go through the verses of the श्रीमद्भगवद्गीता, focusing on nuances of pronunciation. 
+                Pick a chapter (or verse), and go through the applicable rules.
+            </p>
+        </div>
+
+        <!-- Input fields for chapter and verse selection -->
+        <div class="inputs">
+            <label for="startVerse" class="form-label">Chapter / Verse</label>
+            <input type="text" class="form-control-xs" id="startVerse" placeholder="e.g. 12">
+            <button id="applyBtn" class="btn btn-primary">Show verses</button>
+            <button id="prevBtn" class="btn" data-toggle="tooltip" title="Previous"><i class="bi bi-caret-left"></i></button>
+            <button id="nextBtn" class="btn" data-toggle="tooltip" title="Next"><i class="bi bi-caret-right"></i></button>
+        </div>
+
+        <div id="inputs-optional" class="optional">
+                <label for="endVerse" class="form-label">End (optional)</label>
+                <input type="text" class="form-control-xs" id="endVerse" placeholder="e.g. 12.1 ">
+
+                <input class="form-check-input ms-2" type="checkbox" value="" id="showAllLinesCheckBox">  
+                <!-- add checked to toggle state on -->
+                <label class="form-check-label" for="showAllLinesCheckBox">show all lines</label>
+
+                <input class="form-check-input ms-2" type="checkbox" value="" id="showRulesInlineCheckBox">
+                <label class="form-check-label" for="showRulesInlineCheckBox">inline rules</label>
+
+                <input class="form-check-input ms-2" type="checkbox" value="" id="showAudioCheckBox" checked>
+                <label class="form-check-label" for="showAudioCheckBox">show audio</label>
+
+                <input class="form-check-input ms-2" type="checkbox" value="" id="transliterateCheckBox">
+                <label class="form-check-label" for="showRulesInlineCheckBox">transliterate</label>
+        </div>
+
+
+        <!-- Output area for verses and rules -->
+        <div class="output" style="display:none" id="output">
+            <div class="d-flex align-items-center gap-1">
+                <button id="rulesPrevBtn" class="btn btn-sm" data-toggle="tooltip" title="Previous rule"><i class="bi bi-caret-left"></i></button>
+                <button id="rulesNextBtn" class="btn btn-sm" data-toggle="tooltip" title="Next rule"><i class="bi bi-caret-right"></i></button>
+                <label id="ruleNumber" class="w-auto" for="rulesDropdown"></label>
+                <select id="rulesDropdown" class="form-select bg-light w-auto"></select>
+            </div>
+
+
+            <div id="ruleExplanation"></div>
+
+            <div id="mulam" class="output-half"></div>
+            <div id="mulamReplace" class="output-half"></div>
+            
+        </div>
+
+        <script src="js/inputs.js"></script>
+        <script type="module" src="js/main.js"></script>
+      </div>
+    </body>
+</html>

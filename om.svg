@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Om Symbol">
+  <rect width="100%" height="100%" rx="8" fill="#ffffff"></rect>
+  <circle cx="32" cy="32" r="28" fill="#F57C00"></circle>
+  <text x="50%" y="50%" font-family="Noto Sans Devanagari, Devanagari, Arial" font-size="28" text-anchor="middle" dominant-baseline="central" fill="#ffffff">ॐ</text>
+</svg>
